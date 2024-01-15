@@ -1,0 +1,66 @@
+<!--Typing Game Prototype-->
+<!--Created by Catalina Escalona, Winter Semester 2023-24-->
+<!--Course: "Web Coding: Intro to Web Development and Game Prototyping"-->
+<!--University of Applied Arts Vienna-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Dickens Dash!</title>
+</head>
+<body>
+    <div class="container">       
+        <header>
+            <div><h1>Dickens Dash!</h1>
+                <h2>Type your way through <i>Bleak House</i></h2></div>
+            <div><img src="assets/typewriter.webp" alt="A digital drawing of a typewriter."></div>
+            <!-- thanks to OpenClipart-Vectors on pixabay for this image under
+                 public domain / Pixabay License:
+                 https://pixabay.com/vectors/typewriter-antique-old-machine-159878/ -->
+          </header>
+
+        <div class="content">
+            <div><!-- left (main) column -->
+                <section id="main-game">
+                    <p id="current-quote">— Hit the start button to get the first quote —</p>
+                    
+                    <input type="text" id="input" disabled="true">
+
+                    <p id="success"></p>
+                    
+                    <div class="action-button-container">
+                        <button id="start">start</button>
+                        <button id="reset">reset</button>
+                    </div>
+    
+                    <h2 style="display:none;" id="game-completed">
+                        Congratulations! You are ready to type the whole Dickens oeuvre!
+                    </h2>
+                </section>
+
+                <section id="completed">
+                    <h2>Completed quotes:</h2>
+                    <ul>
+                        <li>...</li>
+                    </ul>
+                </section>
+
+                <footer>
+                    Prototype Version 2024-01-15 by Catalina Escalona
+                </footer>
+            </div><!-- end left column -->
+
+            <aside id="stats"> <!-- right (widget) column -->
+                stats will go here
+            </aside> <!-- end of right (widget) column -->
+
+        </div>
+
+    </div>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

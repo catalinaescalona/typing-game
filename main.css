@@ -1,0 +1,109 @@
+/* Typing Game Prototype */
+/* Created by Catalina Escalona, Winter Semester 2023-24 */
+/* Course: "Web Coding: Intro to Web Development and Game Prototyping" */
+/* University of Applied Arts Vienna */
+
+body {
+  background-color: cornflowerblue;
+  font-family: monospace, sans-serif;
+}
+
+body div.container {
+  width: 800px;
+  margin: auto;
+  background-color:white;
+  border-radius: 25px;
+  padding: 3em;
+  margin-top: 1.5em;
+}
+
+/* === The Header Section === */
+
+header {
+  display: flex;    
+}
+header div:first-child {
+  width: 600px;
+  text-align: center;
+
+}
+header div:last-child {
+  width: 200px;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  font-size: 42px;
+}
+
+	
+/* === The Content Section === */
+	
+div.content {
+  display: flex;
+}
+div.content div {
+  width: 600px;
+}
+div.content aside {      
+  width: 200px;
+}
+
+#current-quote {
+  background-color: gold;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px dotted gray;
+  padding-top: 1em;
+  margin-top: 2em;      
+}
+
+	
+/* === The Stats Section === */
+
+#stats {
+  border: 1px dotted gray;
+  border-radius: 3%;
+  margin: 0.8em;
+  padding: 0.5em;      
+}
+
+/* === The Main Game Section === */
+
+#main-game {
+  text-align: center;
+  margin-bottom: 4em;   
+}
+#current-quote {
+  font-size: 1.2em;   
+}
+#input {
+  width: 90%;
+  border-radius: 10px;
+  padding: .7em;
+  font-size: 1.2em;
+  font-family: monospace;
+}
+#main-game div.action-button-container {
+  margin-top: 1em;
+}
+#main-game div.action-button-container button {
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  margin: 0.2em;
+  border-radius: 20px;
+  font-family: monospace;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+}
+
+.correct {
+  background-color: aliceblue;   
+}
+.incorrect {
+  background-color: lightcoral;   
+}
